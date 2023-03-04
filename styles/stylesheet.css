@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background: #000000;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2em 3em;
+    font-family: sans-serif;
+    color: #ffffff;
+  }
+  
+  h1 {
+    font-size: 50px;
+    font-family: 'Climate Crisis', cursive;
+    text-align: center;
+    font-weight: 400;
+    padding: 0.525em 0;
+    margin: 0 0 2rem;
+    color: #e88dff;
+  }
+  
+  h2, h3, h4, p{
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  h2 {
+    font-size: 35px;  
+    margin: 0 0 .5rem;
+    color: #d634ff;
+  }
+  
+  h2:not(:first-of-type ) {
+    padding-top: 40px;
+  }
+  
+  h3 {
+    color: #e88dff;
+    font-size: 24px;
+    margin: 0 0 .5rem;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 40px;  
+    padding: 1rem 0;
+    color: #fcf2ff;
+  }
+  
+  p {
+    font-size: 1.15em;
+    margin: 0.5em 0 1em;
+  }
+  
+  @media screen and (min-width: 700px) {
+    img {
+      width: 500px;
+    }
+  }
