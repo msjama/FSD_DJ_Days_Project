@@ -13,6 +13,8 @@ let playMusicMessage = "Let's start playing music!";
 
 // insert your code here
 
+
+
 for (let i = 0; i< album.length; i++) {
 
     html += `
@@ -20,9 +22,16 @@ for (let i = 0; i< album.length; i++) {
     <h3>Artist: ${album[i].artist} | ${album[i].name}</h3>
     <p>Genre: ${album[i].genre}</p>
     <img src="${album[i].artwork}" alt= "${album[i].name}">
-
     `;
-
 }
+    if ( moreAlbumsMessage.length <9) {
+        document.createElement(`<h4> ${moreAlbumsMessage}</h4>`);
+      }  
+      else {
+        document.createElement(`<h4> ${playMusicMessage }</h4>`);
+      }
+
+
+
 
 document.querySelector('main').insertAdjacentHTML('beforeend', html);
