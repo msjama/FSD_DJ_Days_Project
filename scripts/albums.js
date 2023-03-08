@@ -13,7 +13,7 @@ const album = [
     name: 'Get Rich or Die Trying',
     artist: '50 cent',
     genre: 'Hip-hop',
-    artwork: 'Images/Get_Rich_Or_Die_Tryin'.jpeg'
+    artwork: 'Images/Get_Rich_Or_Die_Trying.jpeg'
   },
   { 
     name: 'Renaissance',

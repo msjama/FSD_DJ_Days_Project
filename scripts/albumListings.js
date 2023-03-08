@@ -13,4 +13,16 @@ let playMusicMessage = "Let's start playing music!";
 
 // insert your code here
 
+for (let i = 0; i< album.length; i++) {
+
+    html += `
+    <h2>Name: ${album[i].name}</h2>
+    <h3>Artist: ${album[i].artist} | ${album[i].name}</h3>
+    <p>Genre: ${album[i].genre}</p>
+    <img src="${album[i].artwork}" alt= "${album[i].name}">
+
+    `;
+
+}
+
 document.querySelector('main').insertAdjacentHTML('beforeend', html);
