@@ -8,30 +8,34 @@
 //The message variables have also been included
 
 let html = '';
-let moreAlbumsMessage = "You need more albums!";
-let playMusicMessage = "Let's start playing music!";
+
 
 // insert your code here
 
 
 
-for (let i = 0; i< album.length; i++) {
+for (let i = 0; i< albums.length; i++) {
 
     html += `
-    <h2>Name: ${album[i].name}</h2>
-    <h3>Artist: ${album[i].artist} | ${album[i].name}</h3>
-    <p>Genre: ${album[i].genre}</p>
-    <img src="${album[i].artwork}" alt= "${album[i].name}">
+    <h2>Name: ${albums[i].name}</h2>
+    <h3>Artist: ${albums[i].artist} | ${albums[i].name}</h3>
+    <p>Genre: ${albums[i].genre}</p>
+    <img src="${albums[i].artwork}" alt= "${albums[i].name}">
     `;
+    
 }
-    if ( moreAlbumsMessage.length <9) {
-        document.createElement(`<h4> ${moreAlbumsMessage}</h4>`);
+let moreAlbumsMessage = "You need more albums!";
+let playMusicMessage = "Let's start playing music!";
+
+    if ( albums.length <10) {
+        document.querySelector('header').insertAdjacentHTML('beforeend', `<h4> ${moreAlbumsMessage}</h4>` );
+        console.log('there are less than 10 albums');
       }  
       else {
-        document.createElement(`<h4> ${playMusicMessage }</h4>`);
+        document.querySelector('header').insertAdjacentHTML('beforeend', `<h4> ${playMusicMessage}</h4>`);
+        console.log('Lets start playing music!');
       }
 
 
+      document.querySelector('main').insertAdjacentHTML('beforeend', html);
 
-
-document.querySelector('main').insertAdjacentHTML('beforeend', html);

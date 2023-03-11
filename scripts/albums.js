@@ -8,7 +8,7 @@
 
 /* Iconic albums of all time*/
 
-const album = [
+const albums = [
   {
     name: 'Get Rich or Die Trying',
     artist: '50 cent',
