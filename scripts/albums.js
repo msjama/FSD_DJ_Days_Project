@@ -13,30 +13,38 @@ const albums = [
     name: 'Get Rich or Die Trying',
     artist: '50 cent',
     genre: 'Hip-hop',
-    artwork: 'Images/Get_Rich_Or_Die_Trying.jpeg'
+    artwork: 'Images/Get_Rich_Or_Die_Trying.jpeg',
+    favorite: false
+
   },
   { 
     name: 'Renaissance',
     artist: 'Beyonze',
     genre: 'R&B',
-    artwork: 'Images/Reeves_Beyonce_2.png'
+    artwork: 'Images/Reeves_Beyonce_2.png',
+    favorite: false
   },
   { 
     name: 'Love, Damini',
     artist: 'Burna Boy',
     genre: 'Afro beats',
-    artwork: 'Images/Burna_Boy_-_Love,_Damini.png'
+    artwork: 'Images/Burna_Boy_-_Love,_Damini.png',
+    favorite: true
+  
   },
   { 
     name: 'Rave and Roses',
     artist: 'Rema',
     genre: 'Afro beats',
-    artwork: 'Images/rema_rave_&_roses-portada.jpeg'
+    artwork: 'Images/rema_rave_&_roses-portada.jpeg',
+    favorite: true
+    
   },
   { 
     name: 'Old Romance',
     artist: 'Tekno',
     genre: 'Afro beats',
-    artwork: 'Images/Tekno-Old-Romance-Album-Artwork.jpeg'
+    artwork: 'Images/Tekno-Old-Romance-Album-Artwork.jpeg',
+    favorite: true
   }
 ];

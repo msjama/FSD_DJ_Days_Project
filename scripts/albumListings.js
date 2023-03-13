@@ -22,7 +22,8 @@ for (let i = 0; i< albums.length; i++) {
     <p>Genre: ${albums[i].genre}</p>
     <img src="${albums[i].artwork}" alt= "${albums[i].name}">
     `;
-    
+
+  
 }
 let moreAlbumsMessage = "You need more albums!";
 let playMusicMessage = "Let's start playing music!";
@@ -36,6 +37,26 @@ let playMusicMessage = "Let's start playing music!";
         console.log('Lets start playing music!');
       }
 
+    
+      let myFavorite = "top 3 favorites";
+      // (albums[i].favorite) {
+        document.querySelector('header').insertAdjacentHTML('beforeend', `<p> ${myFavorite}</p>`);
+        console.log ('top 3 favorites');
+    //}
+    
+    for (let i = 0; i< albums.length; i++) {
 
+        if (albums[i].favorite) {
+
+        
+        html += `
+        <h2>Name: ${albums[i].name}</h2>
+        <h3>Artist: ${albums[i].artist} | ${albums[i].name}</h3>
+        <p>Genre: ${albums[i].genre}</p>
+        <img src="${albums[i].artwork}" alt= "${albums[i].name}">
+        `;
+    
+        } 
+    }
       document.querySelector('main').insertAdjacentHTML('beforeend', html);
-
+    
